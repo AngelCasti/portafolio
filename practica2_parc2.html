@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+</head>
+<body>
+    <h1>Tienda de ropa online</h1>
+    <form>
+        <fieldset>
+            <legend>
+                <label>Información del cliente</label>
+            </legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" placeholder="Nombre" maxlength="30" name="nombre" id="nombre" required>
+            <label for="Appater">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             Apellido Paterno: </label>
+            <input type="text" placeholder="Apellido Paterno" maxlength="30" name="Appater" id="Appater" required>
+            <label for="Apmater">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             Apellido Materno: </label>
+            <input type="text" placeholder="Apellido Materno" maxlength="30" name="Apmater" id="Apmater" required><br>
+
+            <label for="usuario">Nombre de usuario: </label>
+            <input type="text" placeholder="Usuario" maxlength="30" name="usuario" id="usuario">
+            <label for="password">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Contraseña: </label>
+            <input type="password" placeholder="Password" maxlength="30" name="password" id="password">
+        </fieldset><br>
+        <fieldset>
+            <legend>
+                <label>Datos de facturación</label>
+            </legend>
+            <label for="calle">Calle: </label>
+            <input type="text" placeholder="Calle" maxlength="30" name="calle" id="calle">
+            <label for="num">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Número: </label>
+            <input type="text" placeholder="Núm exterior" maxlength="30" name="num" id="num">
+            <label for="colonia">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Colonia: </label>
+            <input type="text" placeholder="Colonia" maxlength="30" name="Colonia" id="Colonia"><br>
+
+            <label for="correo">E-mail: </label>
+            <input type="email" name="correo" id="correo" placeholder="Correo" required/>
+            <label for="cp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Código Postal: </label>
+            <input type="text" placeholder="CP" maxlength="30" name="cp" id="cp">
+            <label for="rfc">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            RFC: </label>
+            <input type="text" placeholder="RFC" maxlength="30" name="rfc" id="rfc" required><br>
+
+            <label for="fecha">Fecha de la venta: </label>
+            <input type="date" name="fecha" id="fecha"/>
+        </fieldset><br>
+        <fieldset>
+            <legend>
+                <label>Datos del artículo adquirido</label>
+            </legend>
+            <h5>Tipo: </h5>
+            <select size="5">
+                <option>Falda</option>
+                <option>Vestido</option>
+                <option>Pantalón</option>
+                <option>Playera</option>
+                <option>Camisa</option>
+            </select>
+            <h5>Talla: </h5>
+            <input type="checkbox" name="chico" id="chico" value="chico">
+            <label for="chico">Chico</label>
+            <input type="checkbox" name="mediano" id="mediano" value="mediano">
+            <label for="mediano">Mediano</label>
+            <input type="checkbox" name="grande" id="grande" value="grande">
+            <label for="grande">Grande</label><br><br>
+            <label for="colores">Selecciona un color: </label><br>
+            <input type="color" name="colores" id="colores"/><br>
+            <br><input type="submit" name="" id="" value="Enviar datos"/>
+            <input type="reset" name="" id="" value="Borrar datos">
+        </fieldset>
+    </form>
+    <h2 align="right">&copy Distribuidora de Ropa en Línea 2023</h2>
+</body>
+</html>
