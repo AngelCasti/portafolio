@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinépolis</title>
+</head>
+<style>
+    h1,h2,h3,h4,h5,h6,p,input,label,textarea{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    form{
+        background-color:midnightblue
+    }
+    fieldset{
+        color: gold;
+    }
+    body{
+        background-color: blue;
+    }
+</style>
+<body>
+    <h1 style="color:white">Bienvenido a Cinépolis</h1>
+    <h2 style="color:white">Compra de boletos:</h2>
+    <form>
+        <fieldset>
+            <legend>
+                <h3>Ingrese sus datos: </h3>
+            </legend>
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="usuario">&nbsp&nbsp&nbsp Nombre del usuario: </label>
+                        <input type="text" placeholder="Usuario" name="usuario" id="usuario" maxlength="30" required>
+                    </td>
+                    <td>
+                        <label for="pass">&nbsp&nbsp&nbsp Contraseña: </label>
+                        <input type="password" name="pass" id="pass" placeholder="Password" maxlength="8" required/>
+                    </td>
+                    <td>
+                        <label for="correo">&nbsp&nbsp&nbsp Correo: </label>
+                        <input type="email" name="correo" id="correo" placeholder="E-mail" required maxlength="20"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cantidad">&nbsp&nbsp&nbsp Cantidad a comprar: </label>
+                        <input type="number" name="cantidad" id="cantidad" required/>
+                    </td>
+                    <td>
+                        <label for="fechahora">&nbsp&nbsp&nbsp Fecha y hora: </label><br>
+                        <input type="datetime-local" name="fechahora" id="fechahora" required/><br>
+                    </td>
+                    <td>
+                        <h4>&nbsp&nbsp&nbsp Fila y Asiento: </h4> <!--fila y asiento-->
+                        <select size="3" required>
+                            <option>A 1</option>
+                            <option>A 2</option>
+                            <option>A 3</option>
+                            <option>B 1</option>
+                            <option>B 2</option>
+                            <option>B 3</option>
+                            <option>C 1</option>
+                            <option>C 2</option>
+                            <option>C 3</option>
+                            <option>D 1</option>
+                            <option>D 2</option>
+                            <option>D 3</option>
+                            <option>E 1</option>
+                            <option>E 2</option>
+                            <option>E 3</option>
+                            <option>F 1</option>
+                            <option>F 2</option>
+                            <option>F 3</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>
+                <h3>Formas de pago: </h3>
+            </legend>
+            <table align="center">
+                <tr>
+                    <td>
+                        <input type="radio" name="tarjeta" id="tarjeta" value="tarjeta" required>
+                        <label for="tarjeta">Tarjeta de crédito</label><br>
+                        <br>
+                        <input type="radio" name="tarjeta" id="tarjeta" value="tarjeta" required>
+                        <label for="tarjeta">Tarjeta de débito</label><br>
+                        <br>
+                        <input type="radio" name="tarjeta" id="tarjeta" value="tarjeta" required>
+                        <label for="tarjeta">Transferencia</label><br>
+                    </td>
+                </tr>
+            </table><br>
+        </fieldset><br>
+
+        <marquee>
+            <img src="cineimg/cinepolislogo.png" width="200px">
+        </marquee>
+
+        <fieldset>
+            <legend>
+                <h3>Catálogo: </h3>
+            </legend>
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="peli">Películas disponibles: </label>
+                        <input type="text" name="peli" id="peli" list="pelis" required>
+                        <datalist id="pelis">   
+                            <option>Spiderman</option>
+                            <option>Sr. de los Anillos</option>
+                            <option>Avatar</option>
+                            <option>Exorcista</option>
+                            <option>Monster House</option>
+                            <option>Ratatouille</option>
+                            <option>Coraline</option>
+                            <option>Hasta el último hombre</option>
+                        </datalist>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>
+                <h3>Comentarios: </h3>
+            </legend>
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="comenta">&nbsp&nbsp&nbsp Quejas y Sugerencias: </label>
+                        <textarea name="comenta" id="comenta" cols="30" rows="5"></textarea>
+                    </td>
+                    <td>
+                        <label for="califica">&nbsp&nbsp&nbsp Califica el Servicio: </label><br>
+                        <input type="range" name="califica" id="califica" min="1" max="10" value="10"/>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </fieldset><br>
+
+        <input type="checkbox" name="cor" id="cor" value="cor">
+        <label for="cor" style="color:gold">&nbsp&nbsp&nbsp Enviarme un correo electrónico confirmando mi compra.</label><br>
+        <input type="checkbox" name="ter" id="ter" value="ter">
+        <label for="ter" style="color:gold">&nbsp&nbsp&nbsp Estoy de acuerdo con los términos y condiciones.</label><br>
+
+        <br><br>
+        <input type="submit" name="" id="" value="Enviar datos"/>
+        <input type="reset" name="" id="" value="Borrar datos"><br><br>
+    </form>
+</body>
+</html>
