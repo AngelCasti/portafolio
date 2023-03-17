@@ -1,0 +1,18 @@
+table{
+    margin:0 auto;
+    color:aliceblue;
+}
+h1{
+    color:darkgray;
+    text-align:center;
+}
+body{
+    background-color:rgb(97, 97, 97);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h2,h3,fieldset{
+    color:honeydew;
+}
+h2,h3{
+    text-align:center;
+}

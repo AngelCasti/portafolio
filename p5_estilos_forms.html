@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 5</title>
+    <link rel="stylesheet" href="p5_estilos_forms.css">
+</head>
+<body>
+    <h1>Servicios de Internet y Telefonía</h1>
+    <h2>Contrato de Servicios</h2>
+    <form>
+        <fieldset>
+            <legend>
+                <h3>Datos del cliente: </h3>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="usuario">Nombre del usuario: </label>
+                        <input type="text" placeholder="Usuario" name="usuario" id="usuario" maxlength="30" required>
+                    </td>
+                    <td>
+                        <label for="Apellido p">Apellido paterno: </label>
+                        <input type="text" name="Apellido p" id="Apellido p" maxlength="25" placeholder="Apellido Paterno" required><br>
+                    </td>
+                    <td>
+                        <label for="Apellido m">Apellido materno: </label>
+                        <input type="text" name="Apellido m" id="Apellido m" maxlength="25" placeholder="Apellido materno" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Ciudad: </h4>
+                        <select size="5" multiple>
+                            <option>Zacatecas</option>
+                            <option>San luis Potosí</option>
+                            <option>Aguascalientes</option>
+                            <option>Oaxaca</option>
+                            <option>Guadalajara</option>
+                            <option>CDMX</option>
+                            <option>Chihuahua</option>
+                            <option>Sonora</option>
+                            <option>Quintana Roo</option>
+                            <option>Yucatán</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>Servicio a contratar</h3>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Selecciona el tipo de servicio a contratar</h3>
+                        <input type="checkbox" name="linea" id="linea" value="linea" checked>
+                        <label for="linea">Línea Telefónica</label>
+                        <input type="checkbox" name="internet" id="internet" value="internet" checked>
+                        <label for="internet">Servicio de Internet</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>Forma de pago: </h3>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Elije forma de pago: </h3>
+                        <input type="radio" name="pago" id="pago" value="credito">
+                        <label for="pago">Tarjeta de Crédito</label><br>
+                        <input type="radio" name="pago" id="pago" value="debito">
+                        <label for="pago">Tarjeta de Débito</label><br>
+                        <input type="radio" name="pago" id="pago" value="efectivo">
+                        <label for="pago">Pago en Efectivo</label><br>
+                        <input type="radio" name="pago" id="pago" value="cheque">
+                        <label for="pago">Cheque</label><br>
+                        <input type="radio" name="pago" id="pago" value="transferencia">
+                        <label for="pago">Transferencia Bancaria</label><br>
+                        <input type="radio" name="pago" id="pago" value="deposito">
+                        <label for="pago">Depósito Bancario</label><br>
+                        <input type="radio" name="pago" id="pago" value="oxxo">
+                        <label for="pago">Pago en OXXO</label><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="" id="" value="Enviar datos"/>
+                        <input type="reset" name="" id="" value="Borrar datos">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <h2>Práctica 5</h2>
+    <h3>HTML y CSS</h3>
+    <h3>Primavera 2023</h3>
+</body>
+</html>
+<!---->
