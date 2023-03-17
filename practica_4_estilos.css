@@ -1,0 +1,16 @@
+body{
+    background-color:cornsilk;
+}
+div{
+    background-color:burlywood;
+}
+h2{
+    color:darkblue;
+}
+#parrafo1,#parrafo2{
+    color:deepskyblue;
+}
+#titulo,#titulo2{
+    font-size:25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
