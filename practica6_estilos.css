@@ -1,0 +1,42 @@
+#div{
+    display:bloc;
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    border:1px solid black;
+    text-align:center;
+    margin:15px auto;
+    background:lightseagreen;
+    color:aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#div:hover {
+    display:bloc;
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    border:1px solid black;
+    text-align:center;
+    margin:15px auto;
+    background-color: brown;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    transform: skew(20deg);
+}
+#div:active{
+    display:bloc;
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    border:1px solid black;
+    text-align:center;
+    margin:15px auto;
+    background:peru;
+    -moz-box-shadow:rgb(150,150,150) 10px 15px 15px ;
+    -webkit-box-shadow:rgb(150,150,150) 10px 15px 15px ;
+    box-shadow:rgb(150,150,150) 10px 15px 15px ;
+}
+/* Aplicar un formato diferente al pasar el mouse sobre el contenedor: Color de relleno diferente, borde radial e inclinación. */
