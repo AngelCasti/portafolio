@@ -1,0 +1,59 @@
+#naturaleza{
+    display:block;
+    width: 400px;
+    text-align:center;
+    background:wheat;
+    position:absolute;
+    top: 20px;
+    right:20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+}
+h2{
+    font-family: 'Comfortaa', cursive;
+    font-size:xx-large;
+    color:darkblue
+}
+@font-face{
+    font-family:"fuente2";
+    src: url("Gruppo/Gruppo-Regular.ttf");
+}
+
+
+#menu{
+    overflow: hidden;
+    display:block;
+    width: 280px;
+    height: 110px;
+    text-align:center;
+    background:lawngreen;
+}
+#menu:hover{
+    overflow: visible;
+    background-color: lightgreen;
+    height: 436px;
+}
+h3{
+    font-family: 'Tilt Prism', cursive;
+    font-size:x-large;
+}
+
+
+table{
+    border-collapse: collapse;
+}
+th{
+    height: 50px;
+}
+td{
+    height:50px;
+    text-align:center;
+    vertical-align:middle;
+}
+tr:hover{
+    background-color:green;
+    text-decoration:underline;
+    color:white;
+    cursor:move;
+}
