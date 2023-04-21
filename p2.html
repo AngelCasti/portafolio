@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 getElementById</title>
+    <script src="externo2.js"></script>
+</head>
+<body>
+    <h1>Uso de getElementById</h1><br>
+    <form method="post" action="" enctype="text/plain">
+        <label for="num1">Número 1:</label></br>
+        <input type="text" id="num1" name="num1"></br>
+        <label for="num2">Número 2:</label></br>
+        <input type="text" id="num2" name="num2"></br></br>
+
+        <input type="button" name="sumar" id="sumar" value="sumar" onclick="sumarFunc()">
+        <input type="button" name="restar" id="restar" value="restar" onclick="restarFunc()">
+        <input type="button" name="multiplicar" id="multiplicar" value="multiplicar" onclick="multFunc()">
+        <input type="button" name="dividir" id="dividir" value="dividir" onclick="dividirFunc()">
+    </form>
+
+    <h2>Resultado:</h2>
+    <h3 id="resultado" name="resultado"></h3>
+</body>
+</html>
