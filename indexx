@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<!--Esta es mi primera página web-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio de evidencias</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1 align="right">Materia: Programación web I</h1>
+                <h1>Carrera: Ingeniería en Tecnologías de la Información</h1>
+                <h1 align="center">Semestre: Primavera 2023</h1>
+            </hgroup>
+        </header>
+        <hr width="75%" size="5px" noshade color="powderblue">
+        <h2 align="center">Universidad Politécnica de San Luis Pototsí</h2>
+        <hr width="75%" size="5px" noshade color="powderblue">
+        <h2>Ángel Castillo Silva</h2>
+        <h2>Profesora: MC Imelda Deyanira Hernández Martínez</h2>
+        <hr width="75%" size="5px" noshade color="powderblue">
+        <h2>Mision de carrera:</h2>
+        <p align="justify">“El Programa Educativo de la carrera de Ingeniería en Tecnologías de la Información está comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del conocimiento en los campos de desarrollo e implementación de software, ofreciendo una solución integral a los problemas asociados con el área computacional. Está comprometido con la sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación aplicada involucrando alumnos en la solución de problemas tecnológicos de la sociedad. “
+        </p>
+        <h2>Visión de carrera:</h2>
+        <p align="center">La UPSLP y su programa educativo de Ingeniería en Tecnologías de la Información entregan a la sociedad alumnos formados con los más altos estándares profesionales.
+        </p>
+        <p align="center">Egresados que tienen un su haber las competencias pertinentes a las necesidades de su entorno, y son reconocidos en el ámbito laboral por su alto desempelo y calidad personal; un buen porcentaje de ellos realiza estudios de postgrado en el país o en el extranjero.
+        </p>
+        <p align="center">Además, cuentan con varias certificaciones de importancia en el área, actuales y con reconocimiento internacional. Con un nivel de inglés muy aceptable cerificado por el British Council. Con experiencia prá adquirida en los laboratorios en el estudio de casos y en su estancia profesional y, con las habilidades de manejo de las nueves tecnologías y la capacidad de reconocer el preceso de aprendizaje como una necesidad permanente.</p>
+        <h2>Objetivo de la Materia:</h2>
+        <p align="right">El alumno desarrollará las habilidades necasarias en el uso del lenguaje de hipermarcado de texto, hojas de estilo en cascada y Javascript; analizará, diseñará y creará sitios web que cumplan con los requerimientos y necesidades de la institución para la cual se implantará, además los publicará y administrará</p>
+        <h2>Contenido de la materia:</h2>
+        <ol type="i">
+            <li>Lenguaje HTML</li>
+            <li>Lenguaje HTML avanzado</li>
+            <li>Hojas de estilo CSS</li>
+            <li>Javascript</li>
+            <li>Sitios responsivos</li>
+        </ol>
+        <ul>
+            <li>Inicio</li>
+            <li>Parcial 1</li>
+            <li>Parcial 2</li>
+            <li>Parcial 3</li>
+            <li><a href="musica.pdf">Proyecto Final:</a></li>
+        </ul>
+        <p>Prácticas Parcial 1</p>
+        <ol>
+            <li>Práctica 1:</li>
+            <li><a href="Practica_2_Tablas.html">Práctica 2:</a></li>
+            <li><a href="practica3.html">Práctica 3:</a></li>
+            <li><a href="oxxo.html">Exámen Práctico 1</a></li>
+        </ol>
+        <p>Prácticas Parcial 2:</p>
+        <ol>
+            <li><a href="form1.html">Práctica 1:</a></li>
+            <li><a href="practica2_parc2.html">Práctica 2:</a></li>
+            <li><a href="cinepolis.html">Práctica 3:</a></li>
+            <li><a href="practica_4_estilos.html">Práctica 4:</a></li>
+            <li><a href="p5_estilos_forms.html">Práctica 5:</a></li>
+            <li><a href="practica6_estilos.html">Práctica 6 Propiedad transformación CSS</a></li>
+            <li><a href="outline.html">Propiedad Outline</a></li>
+            <li><a href="examen2doparc.html">Exámen Práctico 2</a></li>
+        </ol>
+        <p>Prácticas Parcial 3</p>
+        <ol>
+            <li><a href="practica1_parc3_179752.html">Práctica 1:</a></li>
+            <li><a href="p2.html">Práctica 2:</a></li>
+            <!---->
+        </ol>
+        <br>
+        <h5>Proyecto Final: </h5>
+        <ul>
+            <li><a href="Inicio.html">Artistas</a></li>
+        </ul>
+        
+        <marquee behavior="alternate" scrollamount="7">
+            <img src="coch.gif" width="30px">
+        </marquee>
+        <script type="text/javascript">
+        var vsid = "si25338a45a3aba";
+        (function() { 
+            var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+            vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+        })();
+</script>
+
+
+    </body>
+</html>
