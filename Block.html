@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+    <link rel="stylesheet" href="Block.css"/>
+    <script src="storage3.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Apartado de sugerencias</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Principal</li>
+                <li>Ayuda</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+
+        <div class="clear"></div>
+
+        <section id="cajaformulario">
+            <form name="formulario">
+                <p>Clave:<br><input type="text" name="clave" id="clave"></p>
+                <p>Valor:<br><textarea name="text" id="texto"></textarea></p>
+                <p><input type="button" name="guardar" id="guardar"
+                value="Guardar"></p>
+                <p><input type="button" name="eliminar" id="eliminar"
+                value="Borrar datos" onclick="elimina()"></p>
+            </form>
+        </section>
+
+        <section id="cajadatos">
+            Aún no registras información
+        </section>
+
+        <aside>
+            <h1>Que Buscas</h1>
+            <form>
+                <input type="text">
+                <input type="submit" value="Buscar">
+            </form>
+        </aside>
+
+        <div class="clear"></div>
+
+        <footer>
+            Osvaldo and Angel &copy; 2023
+        </footer>
+    </div>
+</body>
+</html>

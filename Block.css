@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    width: 90%;
+    margin: 0px auto;
+}
+header h1{
+    background: #039ee6;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    border-bottom: 10px solid #ffffff;
+    font-size: 50px;
+}
+nav{
+    background: black;
+    height: 50px;
+    border-bottom: 5px solid #ffffff;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+.clear{
+    clear: both;
+}
+#cajaformulario{
+    float: left;
+    padding: 20px;
+    border: 1px solid #999999;
+}
+#cajadatos{
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #999999;
+}
+#clave, #texto{
+    width: 200px;
+}
+#cajadatos > div{
+    padding: 5px;
+    border-bottom: 1px solid #999999;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4DAFF6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #4465FB;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+aside{
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    background: #039ee6;
+    padding: 10px;
+}
+footer{
+    background: black;
+    color:#ffffff;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+
+}
