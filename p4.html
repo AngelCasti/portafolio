@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFC</title>
+    <script src="p4.js"></script>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: antiquewhite;
+        }
+        #boton{
+            background-color: brown;
+            height:40px;
+            color:white;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Consultar tu RFC:</h2><br>
+    <form method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label><br><br>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+        <label for="ap">Apellido Paterno:</label><br><br>
+        <input type="text" name="apPa" id="apPa">
+        <br><br>
+        <label for="ap">Apellido Materno:</label><br><br>
+        <input type="text" name="apMa" id="apMa">
+        <br><br>
+        <label for="ind">Año de Nacimiento:</label><br><br>
+        <input type="number" name="ano" id="ano">
+        <br><br>
+        <label for="porcionn">Mes:</label><br><br>
+        <input type="number" name="mes" id="mes">
+        <br><br>
+        <label for="charr">Día:</label><br><br>
+        <input type="number" name="dia" id="dia">
+        <br><br><br>
+        <label for="resultado">Resultado:</label>
+        <p id="resultado" name="resultado"></p>
+        <br><br>
+        <input type="button" name="boton" id="boton" onclick="rfc()" value="Generar RFC">
+    </form>
+</body>
+</html>
