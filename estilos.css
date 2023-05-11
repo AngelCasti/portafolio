@@ -1,0 +1,14 @@
+body{
+    background-color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#boton,#pidief{
+    background-color: maroon;
+    width: 200px;
+    height:50px;
+    color:white;
+
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+}
