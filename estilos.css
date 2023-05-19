@@ -2,13 +2,23 @@ body{
     background-color: beige;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#boton,#pidief{
-    background-color: maroon;
-    width: 200px;
+input{
+    width: 80%;
     height:50px;
-    color:white;
-
+    position:absolute;
+    left:120px;
+    background-color: rgb(152, 234, 255);
     -moz-border-radius:20px;
     -webkit-border-radius:20px;
     border-radius:20px;
+    font-size: x-large;
+}
+#boton{
+    background-color: plum;
+}
+label{
+    font-size: xx-large;
+}
+#resul{
+    background-color: aliceblue;
 }
