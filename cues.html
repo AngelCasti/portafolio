@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encuesta</title>
+    <link rel="stylesheet" href="obtenerTotales.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="jspdf.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+</head>
+<script>
+var total;
+function califica(){
+    var total=0; //total se inicializa en 0
+    for (var x=1;x<=5;x++) //este for se va a realizar 5 veces, porque son 5 preguntas
+    {
+        var res=0; //esta parte va a concatenar res con x, que x va a ir aumentando en 1, por lo tanto, se va a ir recorriendo
+        var nom="r"+x; //entre todas las preguntas
+        var resul=document.getElementsByName(nom);//va hasta la pregunta
+        for(var i=0;i<resul.length;i++)//en este caso la longitud es 4 por las 4 respuestas
+            {
+                if(resul[i].checked==true)//si el radio está seleccionado, se obtiene su valor, si es correcto=5, si no =0
+                res=parseInt(resul[i].value);
+            }
+        total=total+res;//se va sumando su puntuación
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }//dependiendo de sus puntos, le imprimimos un mensaje
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+        else
+            if(total==25)
+        	document.getElementById("comentario").innerHTML="Perfecto... simplemente, perfecto.";
+}
+
+ function generar(){
+    //crear un objeto o instancia pdf
+    var doc=new jsPDF();
+
+    //definir el tamaño de la letra
+    doc.setFontSize(50);
+    //color de texto
+    doc.setTextColor(255,0,0);
+    doc.text(10,20,"Cuestionario de Música");
+    doc.setTextColor(0,0,255);
+    doc.setFontSize(40);
+    doc.setTextColor(0,0,0);
+    doc.setFontSize(30);
+    doc.text(10,50,"25 puntos: Perfecto. \r 5 respuestas correctas");
+    doc.text(10,80,"20 puntos: Excelente. \r 4 respuestas correctas");
+    doc.text(10,110,"15 puntos: Muy bien. \r 3 respuestas correctas");
+    doc.text(10,140,"10 puntos: Regular. \r 2 respuestas correctas");
+    doc.text(10,170,"5 puntos o menos: Meh. \r 1 o ninguna respuesta correcta");
+    doc.text(10,220,"Derechos Reservados\rOsvaldo y Angel");
+    var string=doc.output('datauristring');
+
+    $('iframe').attr('src',string);
+}
+
+</script>
+
+<body>
+    <div id="contiene">
+	<h1 href="">Cuestionario de Música</h1><br>
+	<h2>¿Qué tanto sabes?</h2>
+<form>
+<div>
+	
+	<ul>
+
+		<li>Quién es el rey del Pop?</li><br>
+		<input type="radio" name="r1" id="r1" value="5"/>Michael Jackson<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Frank Sinatra<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Bob Marley<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Ariana Grande<br/>
+		<br>
+		<li>De quién es el concierto más grande hasta la fecha?</li><br>
+		<input type="radio" name="r2" id="r2" value="5"/>Jean Michel Jarre<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Queen<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Michael Jackson<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Don Cheto<br/>
+        <br>
+		<li>Cuál fué la canción más escuchada del 2022?</li><br>
+		<input type="radio" name="r3" id="r3" value="0"/>Levitating - Dua Lipa<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Blinding Lights - The Weeknd<br/>
+		<input type="radio" name="r3" id="r3" value="5"/>As It Was - Harry Styles<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Neverita - Bad Bunny<br/>
+        <br>
+        <li>Que artista tiene más grammys?</li><br>
+		<input type="radio" name="r4" id="r4" value="0"/>Kanye West<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Queen<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>Beyoncé<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>BTS<br/>
+        <br>
+        <li>Quién es considerado el mejor guitarrista de la historia?</li><br>
+		<input type="radio" name="r5" id="r5" value="0"/>Jimmy Page<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>Jimmy Fallon<br/>
+		<input type="radio" name="r5" id="r5" value="5"/>Jimmy Hendrix<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>Jimmy Neutron<br/>
+	</ul>
+	
+</div><br><br>
+<input type="button" value="Calificar" onclick="califica()" id="boton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="Generar PDF" onclick="generar()" id="pidief">
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
