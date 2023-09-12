@@ -1,0 +1,36 @@
+p{
+    text-align: justify;
+    line-height: 150%;
+}
+body{
+    background-color: aquamarine;
+    margin: 50px;
+}
+#titulo{
+    color: white;
+    text-shadow: darkcyan 3px -6px 2px ;
+    font-size: 50px; font-family: Georgia,
+    'Times New Roman', Times, serif;
+}
+td{
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 150%;
+}
+hr{
+    background-color: darkgreen;
+    border: none;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+u{
+    color: red;
+}
+a{
+    color: blue;
+}
+#caja1,#caja2{
+    border: 1px solid black;
+    color:black;
+}
